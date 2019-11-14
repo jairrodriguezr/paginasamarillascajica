@@ -1,0 +1,55 @@
+.contenedor{
+	display: grid;
+	grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: 1fr 3fr 1fr;	
+	grid-template-areas: "header header header"
+						 "buscar imagen ubicacion"
+						 "buscar imagen ubicacion"
+					;
+}
+
+.contenedor .encabezado{
+	background: #ff8000;
+	grid-column-start: header;
+	grid-column-end: header;
+
+	grid-row-start: header;
+	grid-row-end: header;
+
+}
+
+.contenedor .buscar {
+	background: #7AC62F;
+	grid-column-start: 1;
+	grid-column-end: 2;
+
+	grid-row-start: 2;
+	grid-row-end: 4;	 
+}
+
+.contenedor .imagen {
+	background: #C02727;
+	grid-column-start: 2;
+	grid-column-end: 3;
+
+	grid-row-start: 2;
+	grid-row-end: 4;	 
+}
+
+.contenedor .ubicacion {
+	background: #535C95;
+	grid-column-start: 3;
+	grid-column-end: -1;
+
+	grid-row-start: 2;
+	grid-row-end: 4;	 
+}
+
+.contenedor .footer {
+	background: #6C2D0B;
+	grid-column-start: 1;
+	grid-column-end: -1;
+
+	grid-row-start: 4;
+	grid-row-end: -1;	 
+}
